@@ -9,6 +9,7 @@
   MIT License http://opensource.org/licenses/MIT
 
 */
+body {direction: rtl; text-align: right;}
 body, button, input, select, textarea, pre {
   margin: 0;
 }
