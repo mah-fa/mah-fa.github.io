@@ -1,0 +1,87 @@
+.leading-loose {
+  line-height: 1.7;
+}
+
+.avatar {
+  width: 148px;
+  height: 148px;
+}
+@media screen and (min-width:768px) and (max-width:992px) {
+    .avatar {
+        width: 124px;
+        height: 124px
+    }
+}
+
+.avatar2 {
+  width: 132px;
+  height: 132px;
+}
+
+.tran {
+  transition: .7s;
+}
+
+.grid-item {
+  width: 100%;
+}
+@media screen and (min-width:768px) {
+    .grid-item {
+      width: 50%;
+    }
+}
+@media screen and (min-width:1200px) {
+    .grid-item {
+      width: 25%;
+    }
+}
+
+.grid-item--width2 {
+  width: 100%;
+}
+@media screen and (min-width:768px) {
+    .grid-item--width2 {
+      width: 50%;
+    }
+}
+
+
+.grid-item > a > img {
+    -webkit-filter: grayscale(75%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(75%);
+    transition: 0.5s
+}
+
+.grid-item > a > img:hover {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+
+
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  /* ideally, transition speed should match zoom duration */
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+.break-all {
+    word-break: break-all;
+}

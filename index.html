@@ -1,22 +1,455 @@
----
-layout: default
----
+<!doctype html>
+<html class="no-js" lang="">
 
-<div class="home">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Mahdi Farang</title>
+  <meta name="description" content="This is the portfolio of Mahdi Farang, an UI designer.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <div class="posts">
-    {% for post in paginator.posts %}
-      <div class="post">
-        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
-          <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
-          <h3 class="h2 post-title">{{ post.title }}</h3>
-          <p class="post-summary">{{ post.summary }}</p>
-        </a>
-      </div>
-    {% endfor %}
-  </div>
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
 
-  {% include pagination.html %}
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/pace-theme-center-simple.css">
+ 
+  <link rel="stylesheet" href="css/tailwind.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  
+   <script src="css/pace.min.js"></script>
+   
+   <style>
+       .pace-running > *:not(.pace) {
+  opacity:0;
+}
+   </style>
 
-  <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
-</div>
+  
+  
+
+
+
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+    
+    <section class="py-8 xl:pt-20 xl:pb-12">
+        <div class="container mx-auto">
+           
+            <img class="block xl:hidden mx-auto mt-8 mb-2 rounded-full avatar" src="img/avatar-2.png" alt="">
+            <h1 class="text-center xl:font-black">
+                Mahdi Farang
+            </h1>
+            <p class="text-center font-light tracking-wide">
+                The Portfolio
+            </p>
+            
+        </div>
+    </section>
+    
+    <section class="py-8">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap xl:items-center">
+                <div class="w-1/4 hidden xl:block xl:px-8">
+                    <img class="block mx-auto mt-8 mb-2 rounded-full avatar xl:float-right" src="img/avatar-2.png" alt="">
+                </div>
+                <div class="w-full lg:w-3/5 xl:w-1/2 px-8">
+                    <div class="xl:px-16 xl:border-grey-darkest xl:border-r-2 xl:border-l-2">
+                        <p class="text-grey-darkest leading-loose">
+                            I'm Mahdi Farang, UI designer from Tehran, Iran. simplicity and briefness are my concern in design. I like designing app, web and words(=Typography). I spend some time on photography and graphic too.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full lg:hidden h-px py-4"></div>
+                <div class="w-full lg:w-2/5 xl:w-1/4 px-8">
+                    <div>
+                        <p class="text-grey-darkest leading-loose">
+                            <span>
+                                Have a look around and don't hesitate to contact me;
+                            </span>
+                            <br>
+                            <span>
+                                <i class="fas fa-mobile-alt"></i>
+                                +98 912 7052181
+                            </span>
+                            <br>
+                            <span>
+                                <i class="far fa-envelope"></i>
+                                mahdi.farang[@]gmail.com
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-8 xl:py-16 bg-grey-lightest" id="project">
+        <div class="container mx-auto">
+            <h2 class="text-center mt-4">
+                Projects
+            </h2>
+            <div class="flex flex-wrap sm:-mx-2 mt-4">
+               
+                <a href="message.html" class="w-full md:w-1/2 xl:w-1/5 px-12 xl:px-2 no-underline text-center text-grey-darkest my-2">
+                    <div class="w-full h-24 bg-white shadow flex justify-center items-center">
+                        <div>
+                            <h4>M-F</h4>
+                            <p class="font-light">current site</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="message.html" class="w-full md:w-1/2 xl:w-1/5 px-12 xl:px-2 no-underline text-center text-grey-darkest my-2">
+                    <div class="w-full h-24 bg-white shadow flex justify-center items-center">
+                        <div>
+                            <h4>ArtGalleries</h4>
+                            <p class="font-light">visual arts in Tehran</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="message.html" class="w-full md:w-1/2 xl:w-1/5 px-12 xl:px-2 no-underline text-center text-grey-darkest my-2">
+                    <div class="w-full h-24 bg-white shadow flex justify-center items-center">
+                        <div>
+                            <h4>Mapfa</h4>
+                            <p class="font-light">entertainment store</p>
+                        </div>
+                    </div>
+                    <p class="hidden xl:block text-center text-xs text-grey-dark pt-4">
+                        <span>
+                            most 
+                            <i class="far fa-hand-point-up"></i>
+                             recent
+                        </span>
+                    </p>
+                </a>
+                <a href="message.html" class="w-full md:w-1/2 xl:w-1/5 px-12 xl:px-2 no-underline text-center text-grey-darkest my-2">
+                    <div class="w-full h-24 bg-white shadow flex justify-center items-center">
+                        <div>
+                            <h4>V-Brands</h4>
+                            <p class="font-light">fashion market</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="message.html" class="w-full md:w-1/2 xl:w-1/5 px-12 xl:px-2 no-underline text-center text-grey-darkest my-2">
+                    <div class="w-full h-24 bg-white shadow flex justify-center items-center">
+                        <div>
+                            <h4>ArtShop</h4>
+                            <p class="font-light">online art market</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+    
+    
+     
+    <section class="py-8">
+        <div class="container mx-auto overflow-hidden px-4 xl:px-0">
+           
+            <h2 class="text-center mt-4">
+                Gallery
+            </h2>
+            
+            <div class="grid mt-6 xl:mx-1">
+              <div class="grid-item px-1">
+                  <a class="popup" href="img/n01.gif">
+                      <img class="w-full" src="img/n01.gif" alt="">
+                  </a>
+              </div>
+              <div class="grid-item grid-item--width2 px-1">
+                  <a class="popup" href="img/1-high.jpg">
+                      <img class="w-full" src="img/1-low.jpg" alt="">
+                  </a>
+              </div>
+              <div  class="grid-item px-1">
+                  <a class="popup" href="img/3-high.jpg">
+                      <img class="w-full" src="img/3-low.jpg" alt="">
+                  </a>
+              </div>
+              <div class="grid-item px-1">
+                  <a class="popup" href="img/6-hight.jpg">
+                      <img class="w-full" src="img/6-low.jpg" alt="">
+                  </a>
+              </div>
+              <div class="grid-item px-1 grid-item--width2">
+                  <a class="popup" href="img/7-high.jpg"> 
+                      <img class="w-full" src="img/7-low.jpg" alt="">
+                  </a>
+              </div>
+              
+              <div class="grid-item px-1">
+                  <a class="" href="img/n02.gif">
+                      <img class="w-full" src="img/n02.gif" alt="">
+                  </a>
+              </div>
+            </div>
+            
+            <div class="py-8 text-center">
+                <a href="#project" class="font-light text-grey-darker no-underline hover:text-black to-project">
+                    <span>
+                        → 
+                    </span>
+                    see more shots in detailed page for every projects
+                </a>
+            </div>
+            
+        </div>
+    </section> 
+     
+     
+    <section class="py-8 bg-grey-lightest">
+        <div class="container mx-auto px-6">
+            <h2 class="text-center mt-4">
+                Resume
+            </h2>
+            <div class="flex flex-wrap mt-4">
+               
+               <div class="w-1/5 hidden xl:block"></div>
+              
+               <div class="w-full lg:w-2/3 xl:w-2/5 lg:pr-8 ">
+                  
+                   <h3 class="pb-2">Professional History</h3>
+                   <div class="mt-6">
+                       <h4 class="text-black">Mapfa</h4>
+                       <p class="text-black">UI Designer - 2018</p>
+                       <p class="mt-2 text-grey-darkest text-sm leading-normal">
+                           MAPFA is a company that provides VAS solutions for MNOs to enable them deliver various differentiated Value Added Services to their subscribers.
+                       </p>
+                   </div>
+                   <div class="mt-6">
+                       <h4 class="text-black">ArtGalleries</h4>
+                       <p class="text-black">Founder/Front Developer - 2016/2017</p>
+                       <p class="mt-2 text-grey-darkest text-sm leading-normal">
+                           ArtGalleries is an online platform for discovering art. Collect and buy art you'll love, featuring visual art exhibition in galleries accross Iran.
+                       </p>
+                   </div>
+                   <div class="mt-6">
+                       <h4 class="text-black">SimiaService</h4>
+                       <p class="text-black">Designer/Front Developer - 2015</p>
+                       <p class="mt-2 text-grey-darkest text-sm leading-normal">
+                           Simia Service is an online platform that offers online retailing, administrative affairs, and online counselling. The online retailer sells groceries and crafted gifts to its users. The counselling platform offers psychology-based counselling to its users.
+                       </p>
+                   </div>
+                   <div class="mt-6">
+                       <h4 class="text-black">pHow</h4>
+                       <p class="text-black">Graphic Designer - 2014</p>
+                       <p class="mt-2 text-grey-darkest text-sm leading-normal">
+                           pHow is an online how-to guide with a large number of articles in persian language offering step-by-step instructions. pHow articles and videos are created by freelancers and cover a wide variety of topics organized into a hierarchy of categories.
+                       </p>
+                   </div>
+                   
+                   <h3 class="mt-12 pb-2">Education</h3>
+                   <div class="mt-4">
+                       <h4 class="text-black">M.A. in Urban Design</h4>
+                       <p class="mt-1 text-grey-darkest text-sm leading-normal">Islamic Azad University Central Tehran Branch - 2013</p>
+                   </div>
+                   <div class="mt-4">
+                       <h4 class="text-black">B.S. in Urbanism</h4>
+                       <p class="mt-1 text-grey-darkest text-sm leading-normal">Tehran University of Art - 2009</p>
+                   </div>
+                   
+               </div>
+               
+               <div class="w-full lg:w-1/3 xl:w-1/5 mt-16 lg:mt-0">
+                   
+                   <h3 class="pb-2">Skills</h3>
+                   <div class="mt-6">
+                       <h4 class="text-black">Coding</h4>
+                       <p class="mt-2 text-grey-darkest text-sm leading-normal">
+                           expert: <span class="font-medium">HTML</span>, <span class="font-medium">CSS</span>, <span class="font-medium">Sass</span> (I can convert almost every design into html/css)
+                           <br>
+                           familiar: <span class="font-medium">JavaScript</span>, <span class="font-medium">JQuery</span>
+                       </p>
+                   </div>
+                   <div class="mt-6">
+                       <h4 class="text-black">CSS Frameworks</h4>
+                       <p class="mt-2 text-grey-darkest text-sm leading-normal">
+                           expert: <span class="font-medium">Bootstrap</span>, <span class="font-medium">Tailwind</span>
+                       </p>
+                   </div>
+                   <div class="mt-6">
+                       <h4 class="text-black">Primary Tools</h4>
+                       <p class="mt-2 text-grey-darkest text-sm leading-normal">
+                           expert: <span class="font-medium">Figma</span>, <span class="font-medium">Sketch</span>, <span class="font-medium">Framer</span>, <span class="font-medium">Atomic</span>, <span class="font-medium">Flinto</span>, <span class="font-medium">Photoshop</span>, <span class="font-medium">Zeplin</span>
+                           <br>
+                           familiar: <span class="font-medium">Origami</span>
+                       </p>
+                   </div>
+                   <div class="mt-6">
+                       <h4 class="text-black">CMS</h4>
+                       <p class="mt-2 text-grey-darkest text-sm leading-normal">
+                           expert: <span class="font-medium">Wordpress</span> (run and maintain wordpress site, customize plugin and themes)
+                       </p>
+                   </div>
+                   <div class="mt-6">
+                       <h4 class="text-black">Team Working</h4>
+                       <p class="mt-2 text-grey-darkest text-sm leading-normal">
+                           Agile (<span class="font-medium">Scrum Methodology</span>), Task Management (<span class="font-medium">Jira</span>, <span class="font-medium">Trello</span>)
+                       </p>
+                   </div>
+                   
+                   <h3 class="mt-12 pb-2">Award</h3>
+                   <div class="mt-6">
+                       <h4 class="text-black">IWMF</h4>
+                       <p class="mt-2 text-grey-darkest text-sm leading-normal">
+                           Web Design Final Candidate for artgalleries.ir - 2016
+                       </p>
+                   </div>
+                   
+               </div>
+               
+               <div class="w-1/5 hidden xl:block"></div>
+                
+            </div>
+        </div>
+    </section>
+    
+    
+<!--
+    <section class="py-8">
+        <div class="container mx-auto px-6">
+        
+            <h3 class="text-black">contact me:</h3>
+            <p class="">
+                <span>
+                    <i class="fas fa-mobile-alt"></i>
+                    +98 912 7052181
+                </span>
+                <br>
+                <span>
+                    <i class="far fa-envelope"></i>
+                    mahdi.farang[@]gmail.com
+                </span>
+            </p>
+            
+            <h3 class="text-black">Follow me:</h3>
+            <p>
+                <a class="text-grey-darkest" href="">
+                    <span>
+                        <i class="fab fa-lastfm-square"></i>
+                        songs i listen to
+                    </span>
+                </a>
+                <br>
+                <a class="text-grey-darkest" href="">
+                    <span>
+                        <i class="fab fa-twitter-square"></i>
+                        tweets i send out
+                    </span>
+                </a>
+            </p>
+            
+        </div>
+    </section>
+-->
+   
+   
+   
+    <footer class="bg-grey-lightest">
+        <div class="pt-8 pb-8 text-center">
+            <p class="pt-8 inline-block text-sm text-center font-light text-grey-dark border-t">
+                Made by me with
+                <span class="text-xs text-grey mx-1">
+                    <i class="fas fa-heart"></i>
+                </span>
+                 & 
+                <span class="text-xs text-grey mx-1">
+                    <i class="fas fa-coffee"></i>
+                </span>
+   
+                 
+                <span class="ml-6">2018 © Mahdi Farang</span>
+            </p>
+        </div>
+    </footer>
+    
+    
+    
+    
+    
+    
+    
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/vendor/jquery.magnific-popup.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  
+  <script> 
+  $(document).ready(function() {
+
+    $('.grid-item').imagesLoaded( function() {
+      $('.grid').masonry({
+        itemSelector: '.grid-item',
+      });
+    });
+
+    $('.popup').magnificPopup({
+      type: 'image',
+      mainClass: 'mfp-with-zoom',
+      zoom: {
+        enabled: true, // By default it's false, so don't forget to enable it
+
+        duration: 300, // duration of the effect, in milliseconds
+        easing: 'ease-in-out', // CSS transition easing function
+
+        // The "opener" function should return the element from which popup will be zoomed in
+        // and to which popup will be scaled down
+        // By defailt it looks for an image tag:
+        opener: function(openerElement) {
+          // openerElement is the element on which popup was initialized, in this case its <a> tag
+          // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+          return openerElement.is('img') ? openerElement : openerElement.find('img');
+        }
+      }
+    });
+
+    $("a.to-project").on('click', function(event) {
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+     
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+
+
+  });
+</script>
+    
+    
+</body>
+
+</html>

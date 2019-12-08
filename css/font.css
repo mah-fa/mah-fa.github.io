@@ -1,0 +1,55 @@
+@font-face {
+	font-family: klima;
+	font-style: normal;
+	font-weight: 900;
+	src: url('../font/klima-heavy-web.eot');
+	src: url('../font/klima-heavy-web.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../font/klima-heavy-web.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../font/klima-heavy-web.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../font/klima-heavy-web.ttf') format('truetype');
+}
+@font-face {
+	font-family: klima;
+	font-style: normal;
+	font-weight: bold;
+	src: url('../font/klima-bold-web.eot');
+	src: url('../font/klima-bold-web.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../font/klima-bold-web.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../font/klima-bold-web.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../font/klima-bold-web.ttf') format('truetype');
+}
+@font-face {
+	font-family: klima;
+	font-style: normal;
+	font-weight: 500;
+	src: url('../font/klima-medium-web.eot');
+	src: url('../font/klima-medium-web.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../font/klima-medium-web.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../font/klima-medium-web.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../font/klima-medium-web.ttf') format('truetype');
+}
+@font-face {
+	font-family: klima;
+	font-style: normal;
+	font-weight: 300;
+	src: url('../font/klima-light-web.eot');
+	src: url('../font/klima-light-web.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../font/klima-light-web.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../font/klima-light-web.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../font/klima-light-web.ttf') format('truetype');
+}
+@font-face {
+	font-family: klima;
+	font-style: normal;
+	font-weight: normal;
+	src: url('../font/klima-regular-web.eot');
+	src: url('../font/klima-regular-web.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../font/klima-regular-web.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../font/klima-regular-web.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../font/klima-regular-web.ttf') format('truetype');
+}
+
+
+* {
+    font-family: klima;
+}

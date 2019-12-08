@@ -1,8 +1,0 @@
----
-published: true
-title: شروع
-layout: post
-permalink: شروع
----
-این اولین نوشته من در.
-صرفا برای تست tinypress.co
