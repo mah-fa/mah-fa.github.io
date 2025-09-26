@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .profile-section {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .profile-picture {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #f5f5f5;
+            background-image: url(unnamed.jpg);
+            margin: 0 auto 20px;
+            border: 3px solid #1a1a1a;
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+        }
+
+        .bio {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 24px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .social-icon {
+            width: 30px;
+            height: 30px;
+            /* background-color: #1a1a1a; */
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 20px;
+            transition: background-color 0.2s ease;
+        }
+
+        /* .social-icon:hover {
+            background-color: #333;
+        } */
+
+        .links-section {
+            margin-bottom: 40px;
+        }
+
+        .link-item {
+            display: block;
+            font-size: 15px;
+            /* background-color: #f8f9fa; */
+            border: 1px solid #1a1a1a;
+            padding: 16px 30px 16px;
+            margin-bottom: 12px;
+            text-decoration: none;
+            color: #1a1a1a;
+            border-radius: 8px;
+            font-weight: 500;
+            text-align: right;
+            transition: all 0.2s ease;
+        }
+
+        /* .link-item:hover {
+            border-color: #1a1a1a;
+            background-color: #ffffff;
+        } */
+
+        .link-item span {
+            display: inline-block;
+            float: left;
+            opacity: 0.6;
+        }
+
+        .story-section {
+            margin-top: 60px;
+        }
+
+        .section-heading {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #1a1a1a;
+        }
+
+        .story-text {
+            font-size: 15px;
+            color: #555;
+            line-height: 1.7;
+            text-align: left;
+        }
+
+        .additional-links {
+            margin-top: 30px;
+        }
+
+        /* .additional-links .link-item {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            border-color: #1a1a1a;
+        }
+
+        .additional-links .link-item:hover {
+            background-color: #333;
+            border-color: #333;
+        } */
+
+        @media (max-width: 480px) {
+            .container {
+                max-width: 100%;
+                padding: 0 10px;
+            }
+
+            .profile-picture {
+                width: 100px;
+                height: 100px;
+            }
+
+            .name {
+                font-size: 22px;
+            }
+
+            .social-icons {
+                gap: 16px;
+            }
+
+            .social-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <div class="profile-picture"></div>
+            <h1 class="name">Mehdi Farang</h1>
+            <p class="bio">I'm a digital artist with a greate passion for image manipulation and glitch effects.</p>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="social-icons">
+            <!-- <a href="mailto:hello@example.com" class="social-icon" title="Email">✉</a> -->
+            <a href="https://t.me/mhdfr" class="social-icon" title="Telegram" target="_blank">
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M30,0 C13.4274194,0 0,13.4274194 0,30 C0,46.5725806 13.4274194,60 30,60 C46.5725806,60 60,46.5725806 60,30 C60,13.4274194 46.5725806,0 30,0 Z M43.9112903,20.4072581 C43.4637097,25.1491935 41.5040323,36.6653226 40.5120968,41.9758065 C40.0887097,44.2258065 39.266129,44.9758065 38.4677419,45.0483871 C36.7258065,45.2056452 35.4072581,43.8991935 33.7137097,42.7862903 C31.0766129,41.0564516 29.5766129,39.9798387 27.0241935,38.2862903 C24.0604839,36.3387097 25.983871,35.2620968 27.6653226,33.5080645 C28.1129032,33.0483871 35.7822581,26.0685484 35.9274194,25.4395161 C35.9516129,25.3548387 35.9637097,25.0645161 35.7822581,24.9072581 C35.6008065,24.75 35.3467742,24.8104839 35.1653226,24.8467742 C34.8991935,24.9072581 30.6774194,27.6895161 22.5120968,33.2056452 C21.3145161,34.0282258 20.2258065,34.4274194 19.2580645,34.4032258 C18.1814516,34.3790323 16.125,33.7983871 14.5887097,33.3024194 C12.7137097,32.6975806 11.2137097,32.3709677 11.3467742,31.3306452 C11.4193548,30.7862903 12.1572581,30.2419355 13.5725806,29.6733871 C22.3185484,25.8629032 28.1491935,23.3467742 31.0645161,22.1370968 C39.3991935,18.6774194 41.1290323,18.0725806 42.2540323,18.0483871 C42.5080645,18.0483871 43.0524194,18.108871 43.4153226,18.3991935 C43.6572581,18.6048387 43.8024194,18.8951613 43.8387097,19.2096774 C43.8991935,19.5967742 43.9112903,19.9959677 43.8870968,20.3951613 L43.9112903,20.4072581 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg></a>
+            <a href="https://x.com/MhdiFr" class="social-icon" title="X (Twitter)" target="_blank">
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="square-x-twitter-brands-solid-full" fill="#000000" fill-rule="nonzero">
+            <path d="M0,30 C2.02906125e-15,46.5685425 13.4314575,60 30,60 C46.5685425,60 60,46.5685425 60,30 C60,13.4314575 46.5685425,-4.05812251e-15 30,0 C13.4314575,3.04359188e-15 -3.04359188e-15,13.4314575 0,30 Z M45.3013393,14.375 L33.7165179,27.6116071 L47.34375,45.625 L36.6741071,45.625 L28.3258929,34.6986607 L18.7611607,45.625 L13.4598214,45.625 L25.8482143,31.4620536 L12.7790179,14.375 L23.7165179,14.375 L31.2723214,24.3638393 L40,14.375 L45.3013393,14.375 Z M41.0825893,42.4553571 L22.1205357,17.3772321 L18.9620536,17.3772321 L38.1361607,42.4553571 L41.0825893,42.4553571 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg></a>
+            <!-- <a href="#" class="social-icon" title="Instagram">📷</a> -->
+        </div>
+
+        <!-- Main Links -->
+        <div class="links-section">
+            <a href="https://objkt.com/users/tz1buYhao7eSgPrFujMya4C7EcTT6cPgf8jX" class="link-item" target="_blank"><span>my profile on </span>objkt.com ❭</a>
+            <!-- <a href="#" class="link-item" target="_blank"><span>my profile on </span>foundation.app ❭</a> -->
+        </div>
+
+        <!-- My Story Section -->
+        <div class="story-section">
+            <h2 class="section-heading">My Story</h2>
+            <div class="story-text">
+                <p>I am the founder of two platforms related to the Iranian art scene: one to introduce artists and exhibitions held in Iranian galleries, and the other to sell (physical) artworks by Iranian artists. I am also the founder and curator of all group exhibitions on the "ArtRoom" platform. For years, I was only active in the physical art scene and unfortunately was unaware of the exciting world of NFTs. To learn more about these platforms, see the links below:</p>
+            </div>
+            
+            <!-- Additional Links -->
+            <div class="additional-links">
+                <a href="https://artgalleries.ir/en/" class="link-item" target="_blank"><span>
+<svg width="24.1025641px" height="20px" viewBox="0 0 24.1025641 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-Copy-2" fill="#393939">
+            <path d="M5.77158668,19.8973621 C3.14465815,20.5432453 1.21880212,18.0055397 -8.23637455e-13,16.0710787 L1.13163085,14.1901005 C2.14802084,15.0572646 2.87153773,15.2679174 3.98150753,14.995009 C7.16342095,14.2126716 8.8480429,10.9329613 11.8449614,10.1961087 C13.73191,9.73216438 15.7760403,10.5409099 18.0821116,14.0536279 L16.936097,15.8410067 C16.2732339,15.2754649 15.3441861,14.726802 13.7532294,15.1179707 C10.7563109,15.8548234 9.36048903,19.0149583 5.77158668,19.8973621 Z M11.6013784,7.92204371 L24.1025641,2.04338429 L24.1025641,0 L11.5765251,5.87865942 L11.6013784,7.92204371 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg></span>artgalleries.ir ❭</a>
+                <a href="https://iranart.shop/" class="link-item" target="_blank"><span>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-4" fill="#393939">
+            <path d="M26,0 L26,26 L0,26 L0,0 L26,0 Z M24.375,1.625 L1.625,1.625 L1.625,24.375 L24.375,24.375 L24.375,1.625 Z" id="Combined-Shape"></path>
+            <rect id="Rectangle" x="3.79166667" y="3.79166667" width="9.20833333" height="18.4166667"></rect>
+        </g>
+    </g>
+</svg></span>iranart.shop ❭</a>
+                <a href="https://room.artgalleries.ir/" class="link-item" target="_blank"><span>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M0,0 L26,5.41666667 L26,26 L0,14.4444444 L0,0 Z M1.13043478,21.4782609 L1.13043478,24.8695652 L4.52173913,24.8695652 L4.52173913,26 L0,26 L0,21.4782609 L1.13043478,21.4782609 Z M1.69565217,2.26086957 L1.69565217,13.3110508 L24.3043478,23.173913 L24.3043478,6.95315792 L1.69565217,2.26086957 Z" id="Shape" fill="#3F303E"></path>
+    </g>
+</svg></span>room.artgalleries.ir ❭</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
